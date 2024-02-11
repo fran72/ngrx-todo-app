@@ -1,0 +1,1 @@
+{"ast":null,"code":"import { todoReducer } from './todos/todo.reducer';\nimport { filterReducer } from './filter/filter.reducer';\nexport const appReducers = {\n  todos: todoReducer,\n  filter: filterReducer\n};","map":null,"metadata":{},"sourceType":"module","externalDependencies":[]}

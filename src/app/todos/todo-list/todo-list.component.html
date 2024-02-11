@@ -1,0 +1,15 @@
+    
+  <!-- This section should be hidden by default and shown when there are todos -->
+  <section class="main">
+    <input id="toggle-all" class="toggle-all" type="checkbox">
+    <label for="toggle-all">Mark all as complete</label>
+    <ul class="todo-list">
+        
+        @for (todo of todos | todoFilter:activeFilter; track todo.id) {
+          <app-todo-item [todo]="todo"></app-todo-item>
+        } @empty {
+          Empty list of users
+        }
+        
+    </ul>
+  </section>

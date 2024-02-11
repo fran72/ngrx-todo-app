@@ -1,0 +1,1 @@
+{"ast":null,"code":"import { createReducer, on } from '@ngrx/store';\nimport { setfilter } from './filter.actions';\nexport const initialState = 'all';\nexport const filterReducer = createReducer(initialState, on(setfilter, (state, {\n  filter\n}) => filter));","map":null,"metadata":{},"sourceType":"module","externalDependencies":[]}
