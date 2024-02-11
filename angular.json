@@ -44,7 +44,6 @@
               "optimization": true,
               "outputHashing": "all",
               "sourceMap": false,
-              "extractCss": true,
               "namedChunks": false,
               "extractLicenses": true,
               "vendorChunk": false,
@@ -67,18 +66,15 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "todoapp:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "todoapp:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "todoapp:build"
           }
         },
         "test": {
@@ -124,6 +120,5 @@
           }
         }
       }
-    }},
-  "defaultProject": "todoapp"
+    }}
 }
